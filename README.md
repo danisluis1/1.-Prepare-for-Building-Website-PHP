@@ -13,3 +13,6 @@
 <p align="center">
   <img src="https://github.com/danisluis1/1.-Prepare-for-Building-Website-PHP/blob/version1/3.png">
 </p>    
+<p align="center">
+  <img src="https://github.com/danisluis1/1.-Prepare-for-Building-Website-PHP/blob/version1/4.png">
+</p>
