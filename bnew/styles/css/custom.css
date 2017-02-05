@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * @author: Lorence
+ * Part1: Writting CSS to reset a lot of default components
+ */
+h4, h5, h6, h1, h2, h3 {margin-top:0;}
+ul,ol{margin:0;}
+p{margin:0;}
+ul{list-style-type: none;}
+a:hover{
+	background-color:transparent;
+}
+html,body{
+	font-family:'Roboto',sans-serif;
+	font-size:100%;
+	background:#fff;
+
+	width: 100%;
+}
+/**
+ * .header => .headerLeft ... => @media screen and (max-width: * 800px) => .headerRight
+ * Notice that: Not using % for margin or padding. 
+ * => .banner
+ */
+.banner{
+	background: url(../images/banner.png) no-repeat center top;
+	background-size: 100% auto;
+	-webkit-background-size:100% auto;
+	-moz-background-size:100% auto;
+	-o-background-size:100% auto;
+
+	min-height: 210px;
+}
+.menu{
+	background:url(../images/menu.png) repeat center top;
+	background-size: 100% auto;
+	-webkit-background-size:100% auto;
+	-moz-background-size:100% auto;
+	-o-background-size:100% auto;
+
+	min-width: 50px;
+	text-align: left;	
+}
+.menu li{
+	display: inline-block;
+}
+.menu li:first-child{
+	margin-left:100px;
+}
+.menu li a{
+	display: block;
+	/** Copy CSS from Adobe Photoshop CC */
+	font-size: 16px;
+  	font-family: 'Roboto', sans-serif;
+  	font-weight: 400;
+  	color: rgb(226, 228, 229);
+  	line-height: 0.321;
+
+  	padding: 16px;
+}
+.menu li a:hover{
+	background-color: white;
+	color: #ff9a00;
+}
+.menu .active a{
+	color:#FFFFFF;
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+	.banner{
+		background: url(../images/banner.png) no-repeat center top;
+		background-size: 100% auto;
+		-webkit-background-size:100% auto;
+		-moz-background-size:100% auto;
+		-o-background-size:100% auto;
+
+		min-height: 175px;
+	}
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+	.banner{
+		background: url(../images/banner.png) no-repeat center top;
+		background-size: 100% auto;
+		-webkit-background-size:100% auto;
+		-moz-background-size:100% auto;
+		-o-background-size:100% auto;
+	
+		min-height: 132px;
+	}
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px){
+	.banner{
+		background: url(../images/banner.png) no-repeat center top;
+		background-size: 100% auto;
+		-webkit-background-size:100% auto;
+		-moz-background-size:100% auto;
+		-o-background-size:100% auto;
+	
+		min-height: 82px;	
+	}
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+	.banner{
+		background: url(../images/banner.png) no-repeat center top;
+		background-size: 100% auto;
+		-webkit-background-size:100% auto;
+		-moz-background-size:100% auto;
+		-o-background-size:100% auto;
+	
+		min-height: 52px;
+	}
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+}
